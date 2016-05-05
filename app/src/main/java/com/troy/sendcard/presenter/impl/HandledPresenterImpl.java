@@ -3,6 +3,7 @@ package com.troy.sendcard.presenter.impl;
 import android.content.Context;
 
 import com.troy.sendcard.bean.respone.HandledResult;
+import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.interactor.IHandledInteractor;
 import com.troy.sendcard.interactor.Impl.HandledInteractorImpl;
 import com.troy.sendcard.presenter.IHandledPresenter;
@@ -26,12 +27,12 @@ public class HandledPresenterImpl implements IHandledPresenter, IHandledInteract
 
     @Override
     public void requestHandledList(int page) {
-        mHandledInteractor.getHandledList(page);
+        mHandledInteractor.getHandledList(page, Constant.DATA_REFRESH);
     }
 
     @Override
     public void requestMoreHandledList(int page) {
-        mHandledInteractor.getHandledList(page);
+        mHandledInteractor.getHandledList(page, Constant.DATA_LOADING_MORE);
     }
 
     @Override

@@ -23,7 +23,7 @@ public class HandledInteractorImpl implements IHandledInteractor {
     }
 
     @Override
-    public void getHandledList(int page) {
+    public void getHandledList(int page, final int type) {
         SendCardApp.UserInfo userInfo = new SendCardApp.UserInfo();
         HandledParam param = new HandledParam();
         param.setUser_id(userInfo.getUserId());
@@ -50,9 +50,17 @@ public class HandledInteractorImpl implements IHandledInteractor {
                     @Override
                     public void onNext(HandledResult handledResult) {
                         if (handledResult.getCode() == Constant.ResponeStatus.OK) {
-                            mHandledListener.onSuccess(handledResult.getData());
+                            if (type == Constant.DATA_REFRESH) {
+                                mHandledListener.onSuccess(handledResult.getData());
+                            } else if (type == Constant.DATA_LOADING_MORE) {
+                                mHandledListener.onLoadMoreSuccess(handledResult.getData());
+                            }
                         } else {
-                            mHandledListener.onFail();
+                            if (type == Constant.DATA_REFRESH) {
+                                mHandledListener.onFail();
+                            } else if (type == Constant.DATA_LOADING_MORE) {
+                                mHandledListener.onLoadMoreFail();
+                            }
                         }
                     }
                 });

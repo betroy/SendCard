@@ -96,9 +96,11 @@ public class UnhandledFragment extends BaseFragment implements UnhandledView, Ca
 
     @Override
     public void loadDataSuccess(List<UnhandledResult.UnhandledDataEntity> unhandledDataEntityList) {
-        mUnhandledDataEntityList.clear();
-        mUnhandledDataEntityList.addAll(unhandledDataEntityList);
-        mUnhandledAdapter.notifyDataSetChanged();
+        if (null != unhandledDataEntityList) {
+            mUnhandledDataEntityList.clear();
+            mUnhandledDataEntityList.addAll(unhandledDataEntityList);
+            mUnhandledAdapter.notifyDataSetChanged();
+        }
         mRecyclerView.refreshComplete();
     }
 
@@ -110,8 +112,10 @@ public class UnhandledFragment extends BaseFragment implements UnhandledView, Ca
 
     @Override
     public void loadMoreDataSuccess(List<UnhandledResult.UnhandledDataEntity> unhandledDataEntityList) {
-        mUnhandledDataEntityList.addAll(unhandledDataEntityList);
-        mUnhandledAdapter.notifyDataSetChanged();
+        if (null != unhandledDataEntityList) {
+            mUnhandledDataEntityList.addAll(unhandledDataEntityList);
+            mUnhandledAdapter.notifyDataSetChanged();
+        }
         mRecyclerView.loadMoreComplete();
     }
 

@@ -18,5 +18,5 @@ public interface IUnhandledInteractor {
         void onLoadMoreFail();
     }
 
-    void getUnhandledList(int page);
+    void getUnhandledList(int page,int type);
 }

@@ -6,6 +6,8 @@ package com.troy.sendcard.config;
 public class Constant {
     public static String PAGE_SIZE = "10";
     public static final String KEY_EXTRA_EXPRESS_NO = "expressno";
+    public static final int DATA_REFRESH=0;
+    public static final int DATA_LOADING_MORE=1;
 
     public static class Config {
         public static final boolean DEBUG = true;

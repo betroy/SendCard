@@ -58,9 +58,11 @@ public class HandledFragment extends BaseFragment implements HandledView, XRecyc
 
     @Override
     public void loadDataSuccess(List<HandledResult.HandledDataEntity> handledDataEntityList) {
-        mHandledDataEntityList.clear();
-        mHandledDataEntityList.addAll(handledDataEntityList);
-        mHandledAdapter.notifyDataSetChanged();
+        if (null != handledDataEntityList) {
+            mHandledDataEntityList.clear();
+            mHandledDataEntityList.addAll(handledDataEntityList);
+            mHandledAdapter.notifyDataSetChanged();
+        }
         mRecyclerView.refreshComplete();
     }
 
@@ -72,8 +74,10 @@ public class HandledFragment extends BaseFragment implements HandledView, XRecyc
 
     @Override
     public void loadMoreDataSuccess(List<HandledResult.HandledDataEntity> handledDataEntityList) {
-        mHandledDataEntityList.addAll(handledDataEntityList);
-        mHandledAdapter.notifyDataSetChanged();
+        if (null != handledDataEntityList) {
+            mHandledDataEntityList.addAll(handledDataEntityList);
+            mHandledAdapter.notifyDataSetChanged();
+        }
         mRecyclerView.loadMoreComplete();
     }
 

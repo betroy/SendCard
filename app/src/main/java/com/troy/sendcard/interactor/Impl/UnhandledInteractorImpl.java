@@ -23,7 +23,7 @@ public class UnhandledInteractorImpl implements IUnhandledInteractor {
     }
 
     @Override
-    public void getUnhandledList(int page) {
+    public void getUnhandledList(int page, final int type) {
         SendCardApp.UserInfo userInfo = new SendCardApp.UserInfo();
         UnhandledParam param = new UnhandledParam();
         param.setUser_id(userInfo.getUserId());
@@ -50,9 +50,17 @@ public class UnhandledInteractorImpl implements IUnhandledInteractor {
                     @Override
                     public void onNext(UnhandledResult unhandledResult) {
                         if (unhandledResult.getCode() == Constant.ResponeStatus.OK) {
-                            unhandledListener.onSuccess(unhandledResult.getData());
+                            if (type == Constant.DATA_REFRESH) {
+                                unhandledListener.onSuccess(unhandledResult.getData());
+                            } else if (type == Constant.DATA_LOADING_MORE) {
+                                unhandledListener.onLoadMoreSuccess(unhandledResult.getData());
+                            }
                         } else {
-                            unhandledListener.onFail();
+                            if (type == Constant.DATA_REFRESH) {
+                                unhandledListener.onFail();
+                            } else if (type == Constant.DATA_LOADING_MORE) {
+                                unhandledListener.onLoadMoreFail();
+                            }
                         }
                     }
                 });

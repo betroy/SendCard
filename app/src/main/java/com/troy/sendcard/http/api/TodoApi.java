@@ -1,8 +1,10 @@
 package com.troy.sendcard.http.api;
 
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.service.TodoService;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -14,7 +16,11 @@ public class TodoApi {
     private TodoService mTodoService;
 
     public TodoApi() {
-        Retrofit retrofit = new Retrofit.Builder().baseUrl(Constant.getHost())
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().addNetworkInterceptor(new StethoInterceptor()).build();
+        Retrofit retrofit = new Retrofit
+                .Builder()
+                .client(okHttpClient)
+                .baseUrl(Constant.getHost())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();

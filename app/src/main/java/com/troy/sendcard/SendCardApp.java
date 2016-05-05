@@ -3,6 +3,7 @@ package com.troy.sendcard;
 import android.app.Application;
 import android.content.Context;
 
+import com.facebook.stetho.Stetho;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.troy.sendcard.config.Constant;
@@ -21,6 +22,7 @@ public class SendCardApp extends Application {
         super.onCreate();
         mContext = getApplicationContext();
         initImageLoader();
+        Stetho.initializeWithDefaults(this);
     }
 
     private void initImageLoader() {

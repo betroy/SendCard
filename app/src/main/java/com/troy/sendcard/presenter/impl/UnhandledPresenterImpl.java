@@ -3,6 +3,7 @@ package com.troy.sendcard.presenter.impl;
 import android.content.Context;
 
 import com.troy.sendcard.bean.respone.UnhandledResult;
+import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.interactor.IUnhandledInteractor;
 import com.troy.sendcard.interactor.Impl.UnhandledInteractorImpl;
 import com.troy.sendcard.presenter.IUnhandledPresenter;
@@ -46,11 +47,11 @@ public class UnhandledPresenterImpl implements IUnhandledPresenter, IUnhandledIn
 
     @Override
     public void requestUnhandledList(int page) {
-        mUnhandledInteractor.getUnhandledList(page);
+        mUnhandledInteractor.getUnhandledList(page, Constant.DATA_REFRESH);
     }
 
     @Override
     public void requestMoreUnhandledList(int page) {
-        mUnhandledInteractor.getUnhandledList(page);
+        mUnhandledInteractor.getUnhandledList(page, Constant.DATA_LOADING_MORE);
     }
 }

@@ -19,5 +19,5 @@ public interface IHandledInteractor {
 
     }
 
-    void getHandledList(int page);
+    void getHandledList(int page,int type);
 }
