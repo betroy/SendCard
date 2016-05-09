@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.baoyz.actionsheet.ActionSheet;
 import com.troy.sendcard.R;
-import com.troy.sendcard.bean.respone.SendCardInfoResult;
+import com.troy.sendcard.bean.response.SendCardInfoResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.presenter.ICardInfoSubmitPresenter;
 import com.troy.sendcard.presenter.ICardVaildatePresenter;

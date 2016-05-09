@@ -3,7 +3,7 @@ package com.troy.sendcard.presenter.impl;
 import android.content.Context;
 
 import com.troy.sendcard.R;
-import com.troy.sendcard.bean.respone.SendCardInfoResult;
+import com.troy.sendcard.bean.response.SendCardInfoResult;
 import com.troy.sendcard.interactor.ISendCardInfoInteractor;
 import com.troy.sendcard.interactor.Impl.SendCardInfoInteractorImpl;
 import com.troy.sendcard.presenter.ISendCardInfoPresenter;

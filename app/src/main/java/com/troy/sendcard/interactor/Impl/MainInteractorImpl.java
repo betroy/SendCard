@@ -6,7 +6,7 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 import com.troy.sendcard.R;
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.TodoParam;
-import com.troy.sendcard.bean.respone.TodoResult;
+import com.troy.sendcard.bean.response.TodoResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.TodoApi;
 import com.troy.sendcard.interactor.IMainInteractor;

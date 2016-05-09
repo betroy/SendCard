@@ -1,6 +1,6 @@
 package com.troy.sendcard.view;
 
-import com.troy.sendcard.bean.respone.UnhandledResult;
+import com.troy.sendcard.bean.response.UnhandledResult;
 
 import java.util.List;
 

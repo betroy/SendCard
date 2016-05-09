@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.troy.sendcard.R;
-import com.troy.sendcard.bean.respone.HandledResult;
+import com.troy.sendcard.bean.response.HandledResult;
 
 import java.util.List;
 

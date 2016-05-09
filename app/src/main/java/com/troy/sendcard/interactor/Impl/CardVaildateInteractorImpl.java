@@ -3,7 +3,7 @@ package com.troy.sendcard.interactor.Impl;
 import com.troy.sendcard.R;
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.CardValidateParam;
-import com.troy.sendcard.bean.respone.CardVaildateResult;
+import com.troy.sendcard.bean.response.CardVaildateResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.CardVaildateApi;
 import com.troy.sendcard.interactor.ICardVaildateInteractor;

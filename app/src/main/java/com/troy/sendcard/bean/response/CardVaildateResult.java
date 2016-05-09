@@ -1,9 +1,9 @@
-package com.troy.sendcard.bean.respone;
+package com.troy.sendcard.bean.response;
 
 /**
- * Created by chenlongfei on 16/4/20.
+ * Created by chenlongfei on 16/4/21.
  */
-public class CancleHandledResult {
+public class CardVaildateResult {
     /**
      * code : 200
      * msg : SUCCESS

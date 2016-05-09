@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.troy.sendcard.R;
-import com.troy.sendcard.bean.respone.HandledResult;
+import com.troy.sendcard.bean.response.HandledResult;
 import com.troy.sendcard.presenter.IHandledPresenter;
 import com.troy.sendcard.presenter.impl.HandledPresenterImpl;
 import com.troy.sendcard.ui.adapter.HandledAdapter;

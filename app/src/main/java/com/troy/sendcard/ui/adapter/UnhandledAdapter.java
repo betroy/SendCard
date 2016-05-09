@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.troy.sendcard.R;
-import com.troy.sendcard.bean.respone.UnhandledResult;
+import com.troy.sendcard.bean.response.UnhandledResult;
 
 import java.util.List;
 

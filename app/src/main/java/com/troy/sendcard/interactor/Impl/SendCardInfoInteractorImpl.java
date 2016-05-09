@@ -2,7 +2,7 @@ package com.troy.sendcard.interactor.Impl;
 
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.SendCardInfoParam;
-import com.troy.sendcard.bean.respone.SendCardInfoResult;
+import com.troy.sendcard.bean.response.SendCardInfoResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.SendCardInfoApi;
 import com.troy.sendcard.interactor.ISendCardInfoInteractor;

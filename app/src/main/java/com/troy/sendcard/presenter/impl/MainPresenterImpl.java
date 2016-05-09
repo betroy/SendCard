@@ -2,7 +2,7 @@ package com.troy.sendcard.presenter.impl;
 
 import android.content.Context;
 
-import com.troy.sendcard.bean.respone.TodoResult;
+import com.troy.sendcard.bean.response.TodoResult;
 import com.troy.sendcard.interactor.IMainInteractor;
 import com.troy.sendcard.interactor.Impl.MainInteractorImpl;
 import com.troy.sendcard.presenter.IMainPresenter;

@@ -2,7 +2,7 @@ package com.troy.sendcard.interactor.Impl;
 
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.UnhandledParam;
-import com.troy.sendcard.bean.respone.UnhandledResult;
+import com.troy.sendcard.bean.response.UnhandledResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.UnhandledApi;
 import com.troy.sendcard.interactor.IUnhandledInteractor;

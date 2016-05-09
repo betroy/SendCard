@@ -7,7 +7,7 @@ import android.util.Base64;
 import com.troy.sendcard.R;
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.CardInfoSubmitParam;
-import com.troy.sendcard.bean.respone.CardInfoSubmitResult;
+import com.troy.sendcard.bean.response.CardInfoSubmitResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.CardInfoSubmitApi;
 import com.troy.sendcard.interactor.ICardInfoSubmitInteractor;

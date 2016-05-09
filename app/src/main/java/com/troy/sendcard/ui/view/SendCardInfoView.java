@@ -1,6 +1,6 @@
 package com.troy.sendcard.ui.view;
 
-import com.troy.sendcard.bean.respone.SendCardInfoResult;
+import com.troy.sendcard.bean.response.SendCardInfoResult;
 
 /**
  * Created by chenlongfei on 16/4/13.

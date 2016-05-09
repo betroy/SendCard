@@ -3,7 +3,7 @@ package com.troy.sendcard.interactor;
 import android.content.Context;
 
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
-import com.troy.sendcard.bean.respone.TodoResult;
+import com.troy.sendcard.bean.response.TodoResult;
 
 /**
  * Created by chenlongfei on 16/4/10.

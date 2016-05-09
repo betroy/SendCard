@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.LoginParam;
-import com.troy.sendcard.bean.respone.LoginResult;
+import com.troy.sendcard.bean.response.LoginResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.LoginApi;
 import com.troy.sendcard.interactor.ILoginInteractor;

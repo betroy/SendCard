@@ -2,7 +2,7 @@ package com.troy.sendcard.presenter.impl;
 
 import android.content.Context;
 
-import com.troy.sendcard.bean.respone.UnhandledResult;
+import com.troy.sendcard.bean.response.UnhandledResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.interactor.IUnhandledInteractor;
 import com.troy.sendcard.interactor.Impl.UnhandledInteractorImpl;

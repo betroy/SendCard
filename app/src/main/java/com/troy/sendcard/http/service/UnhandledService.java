@@ -1,6 +1,6 @@
 package com.troy.sendcard.http.service;
 
-import com.troy.sendcard.bean.respone.UnhandledResult;
+import com.troy.sendcard.bean.response.UnhandledResult;
 import com.troy.sendcard.config.Constant;
 
 import java.util.Map;

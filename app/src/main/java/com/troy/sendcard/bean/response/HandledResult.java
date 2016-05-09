@@ -1,4 +1,4 @@
-package com.troy.sendcard.bean.respone;
+package com.troy.sendcard.bean.response;
 
 import java.util.List;
 

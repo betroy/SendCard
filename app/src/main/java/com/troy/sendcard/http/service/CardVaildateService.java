@@ -1,6 +1,6 @@
 package com.troy.sendcard.http.service;
 
-import com.troy.sendcard.bean.respone.CardVaildateResult;
+import com.troy.sendcard.bean.response.CardVaildateResult;
 import com.troy.sendcard.config.Constant;
 
 import java.util.Map;

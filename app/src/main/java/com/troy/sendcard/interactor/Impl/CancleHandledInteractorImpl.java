@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.troy.sendcard.SendCardApp;
 import com.troy.sendcard.bean.request.CancleHandledParam;
-import com.troy.sendcard.bean.respone.CancleHandledResult;
+import com.troy.sendcard.bean.response.CancleHandledResult;
 import com.troy.sendcard.config.Constant;
 import com.troy.sendcard.http.api.CancleHandledApi;
 import com.troy.sendcard.interactor.ICancleHandledInteractor;

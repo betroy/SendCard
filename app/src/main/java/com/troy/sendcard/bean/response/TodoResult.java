@@ -1,4 +1,4 @@
-package com.troy.sendcard.bean.respone;
+package com.troy.sendcard.bean.response;
 
 /**
  * Created by chenlongfei on 16/4/11.
